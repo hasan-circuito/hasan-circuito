@@ -1,7 +1,7 @@
 # Hi, I'm Hasan Mahmud Fahim 👋
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2DD4BF&center=true&vCenter=true&width=700&lines=EEE+Undergrad+%7C+Hardware+%26+Software+Builder;Creator+of+Nexus+Academy+(1%2C640%2B+Tests+Passing);Bridging+ESP8266+IoT+Hardware+to+Python+Systems;Pragmatic+Problem+Solver+%E2%80%94+Zero+Fluff%2C+100%25+Action" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2DD4BF&center=true&vCenter=true&width=700&lines=EEE+Undergrad+%7C+Hands-on+Builder;Creator+of+Nexus+Academy+(Learning+Python+Deeply);Built+ESP8266+IoT+Thief+Detector+%26+Android+Focus+Utility;Learning+by+Building+Real+Projects+%E2%80%94+Zero+Pretension" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -12,8 +12,8 @@
 
 <br />
 
-> **Electrical & Electronic Engineering (EEE) undergraduate and pragmatic systems builder.**  
-> I don't believe in passive tutorial memorization. I learn computer science and engineering by building functional systems—bridging bare-metal microcontroller hardware (ESP8266/C++), real-world problem-solving utilities, and interactive Python learning infrastructure.
+> **Electrical & Electronic Engineering (EEE) undergraduate and practical builder.**  
+> I don't believe in passive tutorial memorization. I learn engineering and programming by building real things—from an ESP8266 IoT security device and personal focus utilities to an interactive Python learning platform.
 
 ---
 
@@ -21,14 +21,14 @@
 
 > *"Technology is only as valuable as the real human and operational problems it solves."*
 
-My work is shaped by practical, real-world context:
-* **Academic Foundation**: Studying Electrical & Electronic Engineering (B.Sc.), exploring how circuits, physics, and low-level hardware communicate with software.
-* **Real-World Business Exposure**: Gained hands-on exposure observing accounts tracking and client communication workflows at a UAE real estate company. Experiencing real day-to-day operations firsthand taught me that practical utility, clarity, and reliability always matter more than theoretical complexity.
-* **High-Agency Prototyping**: When I face a bottleneck (e.g., smartphone distraction or rote learning), I don't wait—I leverage modern AI-assisted engineering and rapid prototyping to architect, build, and deploy working solutions.
+My learning and projects are shaped by real, practical needs:
+* **Academic Foundation**: Studying Electrical & Electronic Engineering (B.Sc.), learning how circuits, hardware, and physical components work.
+* **Real-World Business Exposure**: Gained hands-on exposure observing accounts tracking and customer communication workflows at a UAE real estate firm. Seeing real transactions and operational bottlenecks firsthand taught me that practical utility and reliability always matter more than complex buzzwords.
+* **Problem-Solver Mindset**: When I face a problem (like phone distraction or passive tutorials), I don't wait—I use the best modern tools available (like Google AI Studio) to build a working tool that solves it.
 
 ---
 
-### 🚀 Featured Systems & Projects
+### 🚀 Featured Projects
 
 <table>
   <tr>
@@ -41,29 +41,29 @@ My work is shaped by practical, real-world context:
         <li>Rigorous <strong>Test-Driven Architecture</strong> with <strong>1,640+ automated assertions passing at 100%</strong> across 7 test suites.</li>
         <li>14 published missions with a planned 120-mission curriculum roadmap.</li>
       </ul>
-      <p><code>Python 3.12</code> <code>WebAssembly</code> <code>TypeScript</code> <code>Automated Testing</code> <code>Next.js</code></p>
+      <p><code>Python</code> <code>WebAssembly</code> <code>TypeScript</code> <code>Automated Testing</code> <code>Next.js</code></p>
     </td>
     <td width="33%" valign="top">
-      <h4>📡 <a href="https://github.com/hasan-circuito">ESP8266 IoT Security Device</a></h4>
-      <p><strong>Hardware Edge Intrusion & Thief Detector</strong></p>
+      <h4>📡 <a href="https://github.com/hasan-circuito">ESP8266 IoT Thief Detector</a></h4>
+      <p><strong>Hardware Intrusion & Security Device</strong></p>
       <ul>
-        <li>Engineered on the <strong>ESP8266 microcontroller</strong> to solve physical property security.</li>
-        <li>Real-time sensor interrupt handling, debounce logic, and perimeter motion monitoring.</li>
-        <li>Wi-Fi telemetry alerting system sending instant notifications upon breach.</li>
-        <li>Physical circuit design, breadboard prototyping, and sensor calibration.</li>
+        <li>Built with an <strong>ESP8266 microcontroller</strong> and sensors to detect intruders and prevent theft.</li>
+        <li>Breadboard circuit wiring, hardware interfacing, and real-time sensor trigger detection.</li>
+        <li>Wi-Fi alert notifications sent when motion or breach is detected.</li>
+        <li>Built as a hands-on EEE hardware project to solve real physical security.</li>
       </ul>
-      <p><code>ESP8266</code> <code>Embedded C/C++</code> <code>IoT Sensors</code> <code>Circuit Design</code> <code>Hardware</code></p>
+      <p><code>ESP8266</code> <code>Arduino IDE</code> <code>IoT Sensors</code> <code>Hardware Circuit</code></p>
     </td>
     <td width="33%" valign="top">
       <h4>📱 <a href="https://github.com/hasan-circuito/personal-App-blocker-">Personal App Blocker</a></h4>
-      <p><strong>Android Focus & Distraction Engine</strong></p>
+      <p><strong>Android Focus & Productivity Tool</strong></p>
       <ul>
-        <li>Built to eliminate personal smartphone distractions and enforce disciplined study sprints.</li>
-        <li>Leverages low-level Android usage stats and foreground service monitoring.</li>
-        <li>Rapidly prototyped and shipped using AI Studio to master mobile application architecture from zero.</li>
-        <li>Engineered for battery efficiency and background persistence.</li>
+        <li>Built to eliminate personal smartphone distractions and stay focused during study sessions.</li>
+        <li>Monitors app usage and blocks selected distracting apps on my Android phone.</li>
+        <li>Created by leveraging Google AI Studio with zero prior mobile knowledge to solve my own problem.</li>
+        <li>A working tool running on my own phone to enforce disciplined focus.</li>
       </ul>
-      <p><code>Kotlin</code> <code>Android SDK</code> <code>Productivity</code> <code>Rapid Prototyping</code></p>
+      <p><code>Android</code> <code>Google AI Studio</code> <code>Productivity Tool</code> <code>Problem Solver</code></p>
     </td>
   </tr>
 </table>
@@ -74,18 +74,19 @@ My work is shaped by practical, real-world context:
 
 ```
 ┌─────────────────────────────────┬────────────────────────────────────────────────────────┐
-│ Domain                          │ Practical Tooling & Hands-on Focus                     │
+│ Area                            │ Hands-on Experience & What I Actually Use              │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
-│ ⚡ Embedded & Circuits (EEE)     │ ESP8266, Microcontrollers, Sensors, Embedded C/C++,     │
-│                                 │ Circuit Prototyping, Hardware Debugging                │
+│ ⚡ Electronics & Hardware (EEE)  │ ESP8266, Microcontrollers, Sensors, Arduino IDE,       │
+│                                 │ Breadboard Circuit Wiring, Hardware Testing            │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 🐍 Software & Systems           │ Python 3.12, In-Browser Client Execution (Pyodide),    │
-│                                 │ Test-Driven Development (1,640+ tests), TypeScript     │
+│ 🐍 Software (Learning & Doing)  │ Python (Core Concepts, Learning by Building),          │
+│                                 │ Nexus Academy Architecture (1,640+ tests)              │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 📱 Mobile & Rapid Prototyping   │ Kotlin (Android), AI-Augmented Software Construction   │
+│ 📱 Practical Problem-Solving    │ Android App Blocker (Built with Google AI Studio       │
+│                                 │ to stop phone distraction during studies)              │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
-│ 💼 Real-World Exposure          │ Real Estate Accounts & Client Communication Workflows  │
-│                                 │ (UAE Exposure), Git Version Control                    │
+│ 💼 Real-World Observation       │ Real Estate Accounts Tracking & Client Communication   │
+│                                 │ Workflows (UAE Exposure)                               │
 └─────────────────────────────────┴────────────────────────────────────────────────────────┘
 ```
 
