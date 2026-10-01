@@ -19,7 +19,7 @@
 
 ### ⬡ Background & Contact
 
-* 🎓 **Academics**: B.Sc. in Electrical & Electronic Engineering (EEE Undergrad . Ongoing)
+* 🎓 **Academics**: B.Sc. in Electrical & Electronic Engineering (EEE Undergrad.Ongoing)
 * 🏢 **Real-World Context**: Hands-on exposure observing accounts tracking and customer workflows at a real estate firm in the UAE
 * 📬 **Email**: `hasan.circuito@gmail.com`
 * 🌐 **GitHub**: [@hasan-circuito](https://github.com/hasan-circuito)
