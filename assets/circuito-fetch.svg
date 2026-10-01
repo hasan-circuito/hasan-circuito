@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseFlow {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes waveFlow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 120; }
+      }
+      @keyframes ledBlinkGreen {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px #10B981); }
+      }
+      @keyframes ledBlinkCyan {
+        0%, 100% { opacity: 0.2; }
+        25%, 75% { opacity: 1; filter: drop-shadow(0 0 5px #2DD4BF); }
+      }
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes chipGlow {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(45, 212, 191, 0.2)); }
+        50% { filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.45)); }
+      }
+
+      .term-bg { fill: #0B0F17; }
+      .term-header { fill: #131B26; }
+      .term-border { stroke: #263345; stroke-width: 1.5; }
+      .term-text { font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace; }
+      .trace-wire { stroke: #2DD4BF; stroke-width: 1.5; stroke-dasharray: 6 4; animation: pulseFlow 2s linear infinite; }
+      .trace-dim { stroke: #1E293B; stroke-width: 1.5; }
+      .trace-gnd { stroke: #64748B; stroke-width: 1.5; stroke-dasharray: 4 4; }
+      .trace-vcc { stroke: #F43F5E; stroke-width: 1.5; stroke-dasharray: 6 4; animation: pulseFlow 2s linear infinite; }
+      .wave-line { stroke: #2DD4BF; stroke-width: 2; fill: none; stroke-dasharray: 120; animation: waveFlow 3s linear infinite; }
+      .led-green { fill: #10B981; animation: ledBlinkGreen 1.4s ease-in-out infinite; }
+      .led-cyan { fill: #2DD4BF; animation: ledBlinkCyan 0.9s ease-in-out infinite; }
+      .cursor { animation: cursorBlink 1s infinite; fill: #2DD4BF; }
+      .chip-body { fill: #0F172A; stroke: #2DD4BF; stroke-width: 2; animation: chipGlow 3s ease-in-out infinite; rx: 6px; }
+    </style>
+
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131D31" />
+      <stop offset="100%" stop-color="#0A0F1D" />
+    </linearGradient>
+
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal Window Shell -->
+  <rect x="10" y="10" width="900" height="580" rx="10" class="term-bg term-border" />
+  <rect x="10" y="10" width="900" height="36" rx="10" class="term-header" />
+  <rect x="10" y="36" width="900" height="10" class="term-header" />
+  <line x1="10" y1="46" x2="910" y2="46" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Window Buttons -->
+  <circle cx="32" cy="28" r="6" fill="#EF4444" />
+  <circle cx="52" cy="28" r="6" fill="#F59E0B" />
+  <circle cx="72" cy="28" r="6" fill="#10B981" />
+
+  <!-- Window Title -->
+  <text x="460" y="32" class="term-text" fill="#64748B" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="0.5">
+    hasan-circuito@hardware-lab: ~ (circuito-fetch)
+  </text>
+
+  <!-- Background Signal Grid on Left Panel -->
+  <rect x="25" y="60" width="310" height="510" fill="url(#gridGrad)" rx="6" />
+
+  <!-- LEFT PANEL: HARDWARE MICROCONTROLLER (ESP8266 CIRCUITO IC) -->
+  
+  <!-- Circuit Board Traces Behind Chip -->
+  <path d="M 40 100 L 95 100 L 95 160 L 115 160" class="trace-vcc" fill="none" />
+  <path d="M 40 120 L 80 120 L 80 190 L 115 190" class="trace-wire" fill="none" />
+  <path d="M 40 370 L 80 370 L 80 340 L 115 340" class="trace-wire" fill="none" />
+  <path d="M 40 400 L 95 400 L 95 370 L 115 370" class="trace-wire" fill="none" />
+
+  <path d="M 320 100 L 265 100 L 265 160 L 245 160" class="trace-gnd" fill="none" />
+  <path d="M 320 120 L 280 120 L 280 190 L 245 190" class="trace-wire" fill="none" />
+  <path d="M 320 370 L 280 370 L 280 340 L 245 340" class="trace-wire" fill="none" />
+  <path d="M 320 400 L 265 400 L 265 370 L 245 370" class="trace-wire" fill="none" />
+
+  <!-- Microcontroller IC Body (DIP-16 Package) -->
+  <rect x="115" y="130" width="130" height="270" class="chip-body" fill="url(#chipGrad)" />
+
+  <!-- Pin 1 Index Notch -->
+  <path d="M 165 130 A 15 15 0 0 0 195 130 Z" fill="#0B0F17" stroke="#2DD4BF" stroke-width="1.5" />
+
+  <!-- IC Chip Markings & Branding -->
+  <text x="180" y="190" class="term-text" fill="#2DD4BF" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="2">ESP8266</text>
+  <text x="180" y="208" class="term-text" fill="#94A3B8" font-size="10" text-anchor="middle" letter-spacing="1.5">EX-CIRCUITO</text>
+  
+  <rect x="150" y="225" width="60" height="45" rx="4" fill="#070B12" stroke="#334155" stroke-width="1" />
+  <!-- Silicon Die Circuit Art inside Chip -->
+  <path d="M 160 235 L 175 235 L 175 250 L 195 250 L 195 260" stroke="#2DD4BF" stroke-width="1.2" fill="none" opacity="0.8" />
+  <circle cx="160" cy="235" r="2" fill="#2DD4BF" />
+  <circle cx="195" cy="260" r="2" fill="#10B981" />
+
+  <text x="180" y="292" class="term-text" fill="#64748B" font-size="9" text-anchor="middle">80 / 160 MHz</text>
+  <text x="180" y="306" class="term-text" fill="#38BDF8" font-size="8.5" text-anchor="middle">Wi-Fi SoC // HW</text>
+  <text x="180" y="385" class="term-text" fill="#10B981" font-size="9" font-weight="bold" text-anchor="middle">STATUS: ACTIVE</text>
+
+  <!-- Onboard LEDs -->
+  <circle cx="138" cy="150" r="3.5" class="led-green" />
+  <text x="138" y="164" class="term-text" fill="#64748B" font-size="7" text-anchor="middle">PWR</text>
+
+  <circle cx="222" cy="150" r="3.5" class="led-cyan" />
+  <text x="222" y="164" class="term-text" fill="#64748B" font-size="7" text-anchor="middle">DATA</text>
+
+  <!-- Left Pins (1 to 8) -->
+  <line x1="88" y1="160" x2="115" y2="160" stroke="#F43F5E" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="163" class="term-text" fill="#F43F5E" font-size="8.5" text-anchor="end" font-weight="bold">3V3</text>
+
+  <line x1="88" y1="190" x2="115" y2="190" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="193" class="term-text" fill="#94A3B8" font-size="8.5" text-anchor="end">D0</text>
+
+  <line x1="88" y1="220" x2="115" y2="220" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="223" class="term-text" fill="#94A3B8" font-size="8.5" text-anchor="end">D1</text>
+
+  <line x1="88" y1="250" x2="115" y2="250" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="253" class="term-text" fill="#94A3B8" font-size="8.5" text-anchor="end">D2</text>
+
+  <line x1="88" y1="280" x2="115" y2="280" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="283" class="term-text" fill="#94A3B8" font-size="8.5" text-anchor="end">D3</text>
+
+  <line x1="88" y1="310" x2="115" y2="310" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="313" class="term-text" fill="#94A3B8" font-size="8.5" text-anchor="end">D4</text>
+
+  <line x1="88" y1="340" x2="115" y2="340" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="343" class="term-text" fill="#2DD4BF" font-size="8.5" text-anchor="end">RX</text>
+
+  <line x1="88" y1="370" x2="115" y2="370" stroke="#2DD4BF" stroke-width="3" stroke-linecap="round" />
+  <text x="80" y="373" class="term-text" fill="#2DD4BF" font-size="8.5" text-anchor="end">TX</text>
+
+  <!-- Right Pins (9 to 16) -->
+  <line x1="245" y1="160" x2="272" y2="160" stroke="#64748B" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="163" class="term-text" fill="#64748B" font-size="8.5" font-weight="bold">GND</text>
+
+  <line x1="245" y1="190" x2="272" y2="190" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="193" class="term-text" fill="#F59E0B" font-size="8.5">RST</text>
+
+  <line x1="245" y1="220" x2="272" y2="220" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="223" class="term-text" fill="#94A3B8" font-size="8.5">A0</text>
+
+  <line x1="245" y1="250" x2="272" y2="250" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="253" class="term-text" fill="#94A3B8" font-size="8.5">D5</text>
+
+  <line x1="245" y1="280" x2="272" y2="280" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="283" class="term-text" fill="#94A3B8" font-size="8.5">D6</text>
+
+  <line x1="245" y1="310" x2="272" y2="310" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="313" class="term-text" fill="#94A3B8" font-size="8.5">D7</text>
+
+  <line x1="245" y1="340" x2="272" y2="340" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="343" class="term-text" fill="#94A3B8" font-size="8.5">D8</text>
+
+  <line x1="245" y1="370" x2="272" y2="370" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <text x="280" y="373" class="term-text" fill="#38BDF8" font-size="8.5">EN</text>
+
+  <!-- Oscilloscope Real-Time Signal Waveform Display below IC -->
+  <rect x="45" y="435" width="270" height="80" rx="6" fill="#050811" stroke="#1E293B" stroke-width="1.5" />
+  <line x1="45" y1="475" x2="315" y2="475" stroke="#1E293B" stroke-dasharray="2 4" stroke-width="1" />
+  <line x1="180" y1="435" x2="180" y2="515" stroke="#1E293B" stroke-dasharray="2 4" stroke-width="1" />
+  
+  <!-- Animated Oscilloscope Sine Wave -->
+  <path d="M 45 475 Q 60 445 75 475 T 105 475 T 135 475 T 165 475 T 195 475 T 225 475 T 255 475 T 285 475 T 315 475" class="wave-line" />
+  
+  <text x="55" y="450" class="term-text" fill="#2DD4BF" font-size="8" font-weight="bold">OSCILLOSCOPE // CH1</text>
+  <text x="240" y="450" class="term-text" fill="#64748B" font-size="7.5">3.30V @ 80MHz</text>
+  <text x="55" y="505" class="term-text" fill="#94A3B8" font-size="8">SIGNAL: ⌁ HARDWARE-EDGE</text>
+  <text x="255" y="505" class="term-text" fill="#10B981" font-size="8">LOCKED</text>
+
+  <!-- Vertical Divider Line between Panels -->
+  <line x1="345" y1="55" x2="345" y2="570" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- RIGHT PANEL: SYSTEM FETCH TELEMETRY SPECS -->
+
+  <!-- Prompt Command -->
+  <text x="365" y="80" class="term-text" font-size="14" font-weight="bold">
+    <tspan fill="#38BDF8">PS C:\Users\hasan-circuito&gt;</tspan>
+    <tspan fill="#F8FAFC"> circuito-fetch</tspan>
+    <tspan class="cursor"> █</tspan>
+  </text>
+
+  <!-- Banner Sub-title -->
+  <text x="365" y="105" class="term-text" fill="#2DD4BF" font-size="12" font-weight="bold" letter-spacing="1">
+    ~&gt;&gt; CIRCUITO_TELEMETRY // RELEASE_v2.6
+  </text>
+  <line x1="365" y1="115" x2="890" y2="115" stroke="#334155" stroke-width="1" />
+
+  <!-- SECTION: IDENTITY -->
+  <text x="365" y="140" class="term-text" fill="#F59E0B" font-size="11" font-weight="bold">[IDENTITY]</text>
+  <text x="380" y="160" class="term-text" fill="#94A3B8" font-size="11">Operator    :</text>
+  <text x="480" y="160" class="term-text" fill="#F8FAFC" font-size="11" font-weight="600">Hasan Mahmud Fahim</text>
+  <text x="680" y="160" class="term-text" fill="#38BDF8" font-size="10.5">(hasan-circuito)</text>
+
+  <text x="380" y="180" class="term-text" fill="#94A3B8" font-size="11">Academic    :</text>
+  <text x="480" y="180" class="term-text" fill="#F8FAFC" font-size="11">B.Sc. in Electrical &amp; Electronic Eng. (EEE)</text>
+
+  <text x="380" y="200" class="term-text" fill="#94A3B8" font-size="11">Discipline  :</text>
+  <text x="480" y="200" class="term-text" fill="#2DD4BF" font-size="11">Physical Circuits ▫ Python Software Runtimes</text>
+
+  <text x="380" y="220" class="term-text" fill="#94A3B8" font-size="11">Rhythm      :</text>
+  <text x="480" y="220" class="term-text" fill="#10B981" font-size="11" font-weight="bold">200+ Contributions (GitHub Pro Member)</text>
+
+  <!-- SECTION: HARDWARE EDGE -->
+  <text x="365" y="255" class="term-text" fill="#F59E0B" font-size="11" font-weight="bold">[HARDWARE // EDGE_NODE]</text>
+  <text x="380" y="275" class="term-text" fill="#94A3B8" font-size="11">Controller  :</text>
+  <text x="480" y="275" class="term-text" fill="#F8FAFC" font-size="11">ESP8266 Wi-Fi Microcontroller</text>
+
+  <text x="380" y="295" class="term-text" fill="#94A3B8" font-size="11">Project     :</text>
+  <text x="480" y="295" class="term-text" fill="#38BDF8" font-size="11" font-weight="600">ESP8266 IoT Thief &amp; Intrusion Detector</text>
+
+  <text x="380" y="315" class="term-text" fill="#94A3B8" font-size="11">Subsystem   :</text>
+  <text x="480" y="315" class="term-text" fill="#CBD5E1" font-size="11">Breadboard Circuit Wiring ▫ Real-Time Motion Sensors</text>
+
+  <!-- SECTION: SOFTWARE RUNTIMES -->
+  <text x="365" y="350" class="term-text" fill="#F59E0B" font-size="11" font-weight="bold">[SOFTWARE // CORE_RUNTIME]</text>
+  <text x="380" y="370" class="term-text" fill="#94A3B8" font-size="11">Flagship    :</text>
+  <text x="480" y="370" class="term-text" fill="#2DD4BF" font-size="11" font-weight="bold">Nexus Academy</text>
+  <text x="605" y="370" class="term-text" fill="#64748B" font-size="10.5">(nexus-academy-xqcn.vercel.app)</text>
+
+  <text x="380" y="390" class="term-text" fill="#94A3B8" font-size="11">Execution   :</text>
+  <text x="480" y="390" class="term-text" fill="#F8FAFC" font-size="11">In-Browser Python via Pyodide (WebAssembly)</text>
+
+  <text x="380" y="410" class="term-text" fill="#94A3B8" font-size="11">Reliability :</text>
+  <text x="480" y="410" class="term-text" fill="#10B981" font-size="11" font-weight="bold">1,640+ Automated Unit &amp; Pipeline Assertions (100% Pass)</text>
+
+  <text x="380" y="430" class="term-text" fill="#94A3B8" font-size="11">Mission     :</text>
+  <text x="480" y="430" class="term-text" fill="#CBD5E1" font-size="11">250M+ Bengali Learners ▫ Mental Models ▫ Zero Rote</text>
+
+  <!-- SECTION: PERSONAL UTILITY & FIELD -->
+  <text x="365" y="465" class="term-text" fill="#F59E0B" font-size="11" font-weight="bold">[UTILITY &amp; FIELD_OBSERVATION]</text>
+  <text x="380" y="485" class="term-text" fill="#94A3B8" font-size="11">Personal App:</text>
+  <text x="480" y="485" class="term-text" fill="#F8FAFC" font-size="11">Android App Blocker (Built via AI Studio to eliminate distraction)</text>
+
+  <text x="380" y="505" class="term-text" fill="#94A3B8" font-size="11">Field Exp   :</text>
+  <text x="480" y="505" class="term-text" fill="#CBD5E1" font-size="11">UAE Real Estate: Accounts tracking &amp; CRM workflow observation</text>
+
+  <text x="380" y="525" class="term-text" fill="#94A3B8" font-size="11">Core Ethos  :</text>
+  <text x="480" y="525" class="term-text" fill="#2DD4BF" font-size="11" font-style="italic">Practical utility and working systems beat theoretical hype</text>
+
+  <!-- SECTION: COMM PORT -->
+  <line x1="365" y1="542" x2="890" y2="542" stroke="#1E293B" stroke-width="1" />
+  <text x="365" y="562" class="term-text" fill="#38BDF8" font-size="11" font-weight="bold">PORT // CONNECT:</text>
+  <text x="510" y="562" class="term-text" fill="#F8FAFC" font-size="11">hasan.circuito@gmail.com</text>
+  <text x="730" y="562" class="term-text" fill="#10B981" font-size="10.5">● COMM_ONLINE</text>
+</svg>
