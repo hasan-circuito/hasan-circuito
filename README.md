@@ -7,7 +7,16 @@
 ### ◈ Featured Projects & Hardware
 
 * 🔬 **[Nexus Academy](https://github.com/hasan-circuito/nexus-academy)**  
-  *Flagship Learning Platform* — An in-browser Python learning engine in Bangla. Runs Python completely on the client side via Pyodide WebAssembly with zero server compute overhead. Engineered with 1,640+ automated test assertions passing 100%.
+  *Flagship Learning Platform* — An in-browser Python learning engine in Bangla. Runs Python completely on the client side via Pyodide WebAssembly with zero server compute overhead. Engineered with 1,640+ automated test assertions passing 100%.  
+  <br/>
+  <a href="https://nexus-academy-ochre.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Demo-Visit_Nexus_Academy-2DD4BF?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/hasan-circuito/nexus-academy" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Star_Nexus_Academy-black?style=for-the-badge&logo=github&logoColor=white" alt="Star Nexus Academy" />
+  </a>
+
+<br/>
 
 * 📡 **ESP8266 IoT Thief Detector**  
   *Hardware Security Device* — Built on an ESP8266 microcontroller wired on a breadboard with motion sensors to detect room intrusion and send instant Wi-Fi alerts.
@@ -19,7 +28,7 @@
 
 ### ⬡ Background & Contact
 
-* 🎓 **Academics**: B.Sc. in Electrical & Electronic Engineering (EEE Undergrad.Ongoing)
+* 🎓 **Academics**: B.Sc. in Electrical & Electronic Engineering (EEE Undergrad. Ongoing)
 * 🏢 **Real-World Context**: Hands-on exposure observing accounts tracking and customer workflows at a real estate firm in the UAE
 * 📬 **Email**: `hasan.circuito@gmail.com`
 * 🌐 **GitHub**: [@hasan-circuito](https://github.com/hasan-circuito)
